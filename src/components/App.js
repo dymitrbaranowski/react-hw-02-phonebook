@@ -1,5 +1,6 @@
-import { Component } from "react"
+import React, { Component } from "react"
 import { nanoid } from 'nanoid';
+import { ContactForm } from "./ContactForm/ContactForm";
 
 export class App extends Component {
   state = {
@@ -66,7 +67,7 @@ export class App extends Component {
         }}
       >
         <h1>Phonebook</h1>
-        <ContactF handleSubmit={this.handleSubmit} />
+        <ContactForm handleSubmit={this.handleSubmit} />
         <h2> Contacts</h2>
         <Filter filter={filter} handleChange={this.handleChange} />
         <ContactList
