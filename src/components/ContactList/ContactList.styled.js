@@ -4,12 +4,12 @@ export const ContactListItemBtn = styled.button`
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   align-items: right;
-  background-color: rgba(27, 20, 37, 0.8);
+  background-color: rgba(23, 26, 32, 0.8);
   border: none;
-  border-radius: 8px;
+  border-radius: 7px;
   color: #fff;
   flex-grow: 1;
-  font-family: Arial, sans-serif;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
   font-size: 15px;
   height: 36px;
   line-height: 20px;
