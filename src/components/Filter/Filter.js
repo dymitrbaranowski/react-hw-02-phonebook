@@ -1,9 +1,10 @@
 import propTypes from 'prop-types';
+import { FilterName } from './Filter.styled';
 
 export const Filter = ({ filter, handleChange }) => (
   <div>
     <label>Find contacts by Name </label>
-    <input
+    <FilterName
       type="text"
       name="filter"
       placeholder="Enter filter"

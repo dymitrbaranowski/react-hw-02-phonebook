@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Form = styled.form`
-display: flex;
-flex-direction: column;
-`; 
+  display: flex;
+  flex-direction: column;
+`;
 
 export const FormItem = styled.input`
   display: flex;
@@ -33,9 +33,8 @@ export const FormBtn = styled.button`
   padding: 0 16px 0 16px;
   color: white;
   cursor: pointer;
-  .FormBtn:hover {
+  hover {
     background-color: rgba(23, 26, 32, 1);
     cursor: pointer;
   }
-
 `;
