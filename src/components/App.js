@@ -22,20 +22,16 @@ export class App extends Component {
 
   handleSubmit = ({ name, number }) => {
     const contact = {
-      const id: nanoid(),
-    const name = e.name;
-    const number = e.number;
-    const contactsLists = [...this.state.contacts]
-    }
-    ;
+      id: nanoid(),
+      name,
+      number,
+    };
 
-    if (contactsLists.find(contact => name === contact.name)) {
-      alert(`${name} is already in contacts.`);
-    } else {
-      contactsLists.push({ name, id, number });
-    }
-
-    this.setState({ contacts: contactsLists });
+    this.state.contacts.some(i => i.name === contact.name)
+      ? alert(`${name} is already in contacts`)
+      : this.setState(({ contacts }) => ({
+          contacts: [contact, ...contacts],
+        }));
   };
 
   handleDelete = e => {
