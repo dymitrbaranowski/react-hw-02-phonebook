@@ -20,11 +20,14 @@ export class App extends Component {
     this.setState({ [name]: value });
   };
 
-  handleSubmit = e => {
-    const id = nanoid();
+  handleSubmit = ({ name, number }) => {
+    const contact = {
+      const id: nanoid(),
     const name = e.name;
     const number = e.number;
-    const contactsLists = [...this.state.contacts];
+    const contactsLists = [...this.state.contacts]
+    }
+    ;
 
     if (contactsLists.find(contact => name === contact.name)) {
       alert(`${name} is already in contacts.`);
@@ -77,5 +80,4 @@ export class App extends Component {
       </div>
     );
   }
-
 };
